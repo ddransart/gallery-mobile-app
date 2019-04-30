@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Accueil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header class="myCardHeader">Contact</ion-card-header>
+    <ion-card-content padding>
+      <p>Nom : <strong>{{ contact.name }}</strong></p>
+      <p>Prénom : <strong>{{ contact.firstName }}</strong></p>
+      <p>Email : <strong>{{ contact.email }}</strong></p>
+      <img src="{{ contact.photo }}">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
