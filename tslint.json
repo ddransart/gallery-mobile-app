@@ -1,7 +1,7 @@
 {
   "rules": {
     "no-duplicate-variable": true,
-    "no-unused-variable": [
+   "no-unused-variable": [
       true
     ]
   },

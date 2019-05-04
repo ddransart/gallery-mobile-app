@@ -1,8 +1,9 @@
 <ion-header>
   <ion-navbar color="danger">
-    <ion-title>
-      Accueil
-    </ion-title>
+    <ion-title>Home</ion-title>
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
   </ion-navbar>
 </ion-header>
 
@@ -10,8 +11,8 @@
   <ion-card>
     <ion-card-header class="myCardHeader">Contact</ion-card-header>
     <ion-card-content padding>
-      <p>Nom : <strong>{{ contact.name }}</strong></p>
-      <p>Prénom : <strong>{{ contact.firstName }}</strong></p>
+      <p>Name : <strong>{{ contact.name }}</strong></p>
+      <p>Firstname : <strong>{{ contact.firstName }}</strong></p>
       <p>Email : <strong>{{ contact.email }}</strong></p>
       <img src="{{ contact.photo }}">
     </ion-card-content>
