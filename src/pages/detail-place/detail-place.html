@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Detail place</ion-title>
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end="">
+        <button ion-button="" icon-only="" (click)="onTakePicture()">
+          <ion-icon name="camera"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header class="myCardHeader">{{ place.title }}</ion-card-header>
+    <ion-card-content padding>
+      <p>Title : <strong>{{ place.title }}</strong></p>
+      <p>Country : <strong>{{ place.country }}</strong></p>
+      <p>City : <strong>{{ place.city }}</strong></p>
+      <p>Longitude : <strong>{{ place.location.longitude }}</strong></p>
+      <p>Latitude : <strong>{{ place.location.latitude }}</strong></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<div>
+  <img src="{{ photoUser }}">
+</div>

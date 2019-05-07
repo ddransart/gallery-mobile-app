@@ -1,5 +1,7 @@
 {
   "name": "gallery-mobile-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

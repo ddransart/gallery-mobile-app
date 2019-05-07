@@ -6,5 +6,28 @@
     </button>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding>
+  <form #f="ngForm" (ngSubmit)="onGetMeteo(f.value)">
+
+    <!-- Ville -->
+    <ion-item>
+      <ion-label>Ville :</ion-label>
+      <ion-input name="ville" type="text" ngModel required=""></ion-input>
+    </ion-item>
+
+    <button ion-button="" color="danger" type="submit" [disabled]="!f.valid" block="">Données Météo</button>
+  </form>
+
+  <ion-list>
+    <ion-item *ngFor="let forec of forecastData?.list">
+      <ion-avatar item-start="">
+        <img src="assets/imgs/{{ forec.weather[0].main }}.png"><!-- car weather est un tableau -->
+      </ion-avatar>
+      <h2>Date : <strong>{{ forec.dt*1000 | date:'dd/MM-HH:mm'}}</strong></h2>
+      <p>Température : <strong>{{ forec.main.temp-273.15 }} °C</strong></p>
+      <p>Pression : <strong>{{ forec.main.pressure }}</strong></p>
+      <p>Humidité : <strong>{{ forec.main.humidity }}</strong></p>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -9,9 +9,9 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   contact= {
-    name: 'Dransart',
+    name: 'Drans',
     firstName: 'Diane',
-    email: 'ddransart.conseils@gmail.com',
+    email: 'test@gmail.com',
     photo: 'assets/imgs/logo.png'
   }
 
